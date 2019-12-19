@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- start header-->
+    <header>
+      <div class="containter1">
+        <div class="logo">
+          <img src="images/logo.png" alt="logo">
+        </div>
+
+    <div class="navi">
+      <ul>
+       <!-- <li><a href="#forside" class="active">Hjem</a></li>-->
+        <li><a href="#om">Om mig</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#lering">Læring</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+
+    </div>
+      </div>
+    </header>
+    <!-- Slut header -->
+
+    <!-- Start Forside -->
+    <section class="forside" id="forside">
+      <div class="container">
+        <div class="forside-text">
+            <h1>Velkommen til min</h1>
+            <h3>Portfolio</h3>
+        </div>
+      </div>
+    </section>
+    <!-- Slut forside -->
+
+    <!-- Start om -->
+    <section class="om" id="om">
+      <div class="container">
+        <h2 class="title">Om mig</h2>
+        <div class="om-content">
+          <div class="img">
+                <img src="images/mig.jpeg" alt="mig">
+          </div>
+        <div class="beskrivelse">
+          <h4>Mit navn er Donia Chalbak</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <br/>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <br/>
+          <p>
+          </p>
+          <br/>
+        </div>
+        </div>
+        </div>
+
+<br/><br/><br/><br/><br/>
+
+    <!-- skills -->
+  <div class="skills" id="skills">
+    <h2 class="title">Kompetencer</h2>
+
+  <div class="left">
+
+       <div class="kompetenceboks">
+          <h3>HTML 5</h3>
+       </div>
+
+       <div class="kompetenceboks">
+          <h3>Premiere Pro</h3>
+       </div>
+
+       <div class="kompetenceboks">
+          <h3>Photoshop</h3>
+       </div>
+
+  </div>
+
+
+  <div class="right">
+
+       <div class="kompetenceboks">
+          <h3>CSS 3</h3>
+       </div>
+
+       <div class="kompetenceboks">
+          <h3>Adobe XD</h3>
+       </div>
+
+       <div class="kompetenceboks">
+          <h3>Illustrator</h3>
+       </div>
+
+  </div>
+
+
+  </div>
+
+
+    </section>
+    <!-- Slut om -->
+
+
+<!-- Start portfolio -->
+
+<section class="portfolio" id="portfolio">
+<div class="container">
+          <h2 class="title">Portfolio</h2>
+
+          <div class="portfolio-content">
+
+  <!--Popup-->
+        <div class="popup1">
+          <div class="popup" onclick="myFunction()">Flow 1
+            <span class="popuptext" id="myPopup">Flow 1
+                      <div class="knapper">
+                        <button type="button" class="popupknap">Opgavebeskrivelse</button>
+                        <button type="button" class="popupknap">Rapport</button>
+                        <button type="button" class="popupknap">Se produkt</button>
+                      </div>
+            </span>
+          </div>
+        </div>
+
+
+           <div class="popup2">
+          <div class="popup" onclick="myFunction()">Flow 2
+            <span class="popuptext" id="myPopup">Flow 2
+                      <div class="knapper">
+                        <button type="button" class="popupknap">Opgavebeskrivelse</button>
+                        <button type="button" class="popupknap">Rapport</button>
+                        <button type="button" class="popupknap">Se produkt</button>
+                      </div>
+            </span>
+          </div>
+        </div>
+
+
+           <div class="popup3">
+          <div class="popup" onclick="myFunction()">Flow 3
+            <span class="popuptext" id="myPopup">Flow 3
+                      <div class="knapper">
+                        <button type="button" class="popupknap">Opgavebeskrivelse</button>
+                        <button type="button" class="popupknap">Rapport</button>
+                        <button type="button" class="popupknap">Se rapport</button>
+                      </div>
+
+            </span>
+          </div>
+        </div>
+
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+
+</section>
+<!--Popup slut-->
+<!-- slut portfolio -->
+
+<!-- Start læring-->
+<section class="lering" id="lering">
+  <h2 class="title">Læring</h2>
+
+  <div class="row">
+    <div class="column">
+      <div class="card">1. Semester</div>
+    </div>
+    <div class="column">
+      <div class="card">2. Semester</div>
+    </div>
+    <div class="column">
+      <div class="card">3. Semester</div>
+    </div>
+    <div class="column">
+      <div class="card">4. Semester</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- start kontakt -->
+<section class="kontakt" id="kontakt">
+   	 	        <h2 class="title">Kontakt</h2>
+    <div class="kontakt-indhold">
+   	 	  	 <form>
+   	 	  	  	 <input type="text" placeholder="Navn"/>
+   	 	  	  	 <input type="text" placeholder="Email"/>
+   	 	  	  	 <input type="text" placeholder="Emne"/>
+   	 	  	  	 <textarea placeholder="Besked"></textarea>
+   	 	  	  	 <button>Send</button>
+   	 	  	 </form>
+  </div>
+
+</section>
+<!-- slut portfolio -->
+
+<!-- start footer -->
+
+<footer>
+  <div class="container">
+
+  <div class="socialmedia">
+          <ul>
+            <li><a href="https://www.facebook.com/donia.chalbak"><img src="images/facebook.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/doniachalbak/"><img src="images/instagram.png" alt=""></a></li>
+          </ul>
+</div>
+</div>
+
+<p class="copyright">&copy; 2019 Donia Chalbak</p>
+</footer>
+  </body>
+</html>

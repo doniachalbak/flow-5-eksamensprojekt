@@ -1,0 +1,481 @@
+*{
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none;
+}
+
+body, p {
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin:0;
+	line-height: 24px;
+}
+
+/* Header sektion */
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+
+.container1{
+	max-width: 1170px;
+}
+
+header{
+	position: absolute;
+	width:100%;
+	left:0;
+	top:0;
+	padding:10px 15px;
+	z-index:100;
+}
+
+header .logo{
+	float: left;
+}
+.logo img {width: 70px;}
+
+header .navi{
+	float: right;
+	padding-top: 10px;
+}
+
+header .navi ul{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+
+header .navi ul li{
+	display: inline;
+	padding:0 15px;
+}
+
+header .navi ul li a{
+	display: inline-block;
+	padding:10px 0px;
+	font-size: 14px;
+	letter-spacing: 2px;
+	color: #292d33;
+	position: relative;
+}
+
+header .navi ul li a:hover{
+border-bottom: 2px solid #808b99;
+}
+
+/*Forside sektion*/
+
+.forside{
+	min-height: 100vh;
+	background-image: url("images/slide1.jpg");
+	background-size: cover;
+	background-position: center;
+	float: left;
+	width: 100%;
+	padding:0px 15px;
+	position: relative;
+}
+
+.forside .forside-text{
+	position: absolute;
+	top:50%;
+	left: auto;
+}
+
+.forside .forside-text h1{
+	font-size:35px;
+	color:#858787;
+	margin:10px 0px;
+	font-weight:400;
+}
+
+.forside .forside-text h3{
+	font-size:60px;
+	color:white;
+	margin:15px 0px 0px;
+	font-weight:700;
+}
+
+/*Om sektion*/
+
+.om{
+	float: left;
+	width: 100%;
+	padding:80px 0px;
+	background-color: #f5f7fa;
+}
+
+h2.title{
+ font-size:30px;
+ font-weight: 600;
+ margin:0;
+ padding-bottom:70px;
+ text-align: center;
+ color: #808b99;
+ position: relative;
+ letter-spacing:.5px;
+}
+
+h3.h3{
+   font-size:20px;
+   font-weight: 600;
+   margin:0;
+   padding-bottom:30px;
+   text-align: center;
+   color: #808b99;
+   position: relative;
+   letter-spacing:.5px;
+}
+
+.om .om-content .img{
+	float: left;
+	width: 35%;
+	padding:35px;
+}
+
+.om .om-content .img img{
+	width: 100%;
+}
+
+.om .om-content .description{
+	float: left;
+	width: 65%;
+	padding:15px;
+}
+
+.om .om-content .description h5{
+	font-size:25px;
+	color:#5e6875;
+	margin:0;
+	padding-bottom:10px;
+	font-weight: 600;
+}
+
+.om .om-content .description p{
+	color: #808b99;
+	font-size: 16px;
+	line-height: 25px;
+	letter-spacing:.5px;
+}
+
+
+/*skills sektion*/
+
+.skills{
+  width: 600px;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+}
+
+h1{
+  font-size: 30px;
+  padding: 6px 0 10px 0;
+  border-bottom: 4px solid;
+  margin: 0 0 10px 0;
+}
+
+h3{
+  font-size: 20px;
+  margin: 6px 0;
+}
+
+.left {width: 48% !important; float: left;}
+.right{width: 48% !important; float: right;}
+
+.kompetenceboks {padding: 8px; background-color: #808b99; margin-top: 20px;}
+.kompetenceboks h3 {font-size: 17px; color: white; text-align: center;}
+
+
+/*Portfolio sektion*/
+
+.portfolio{
+  float: left;
+	width: 100%;
+	padding:80px 0px;
+	background-color: white;
+}
+
+.portfolio .portfolio-content{
+	display: flex;
+	justify-content: center;
+}
+.card {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.card .popup {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.portfolio .portfolio-content .card{
+	width: 33.33%;
+	padding:13px;
+}
+
+.portfolio .portfolio-content .card .box{
+	background-color:white;
+	padding:15px;
+	position: relative;
+}
+
+
+.portfolio .portfolio-content .card .box img{
+	width: 100%;
+	display:block;
+}
+
+.portfolio img {
+	height: 200px;
+}
+
+/* Popup container */
+
+.popup1 {
+	   background-image: url("images/grey.jpeg") !important;
+	   width: 32% !important;
+	   margin-left: 10px;
+	   color: white;
+	   text-align: center;
+}
+
+.popup2 {
+	   background-image: url("images/grey.jpeg") !important;
+	   width: 32% !important;
+	   margin-left: 10px;
+	   color: white;
+	   text-align: center;
+}
+
+.popup3 {
+	   background-image: url("images/grey.jpeg") !important;
+	   width: 32% !important;
+	   margin-left: 10px;
+	   color: white;
+	   text-align: center;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+   width: 100%;
+   min-height: 100%;
+   	   padding-top: 80px;
+	   padding-bottom:80px;
+	     text-shadow: 2px 2px black;
+	     font-size: 30px;
+	 }
+
+.popupknap {width: 30% !important; background-color: white; padding: 10px; border: none; margin-top: 10px;}
+
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 100%;
+  min-width: 500px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
+  left: 85%;
+  /*margin-left: -80px;*/
+}
+.popuptext {font-size: 16px; text-shadow: none;}
+
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*Læring sektion*/
+.lering {
+  float: left;
+  text-align: center;
+	width: 100%;
+	padding:80px;
+	background-color: #f5f7fa;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/*Kontakt sektion*/
+.kontakt {
+	float: left;
+	width: 100%;
+	padding:80px 15px;
+
+}
+
+.kontakt .kontakt-indhold{
+	margin:auto;
+	max-width:650px;
+}
+
+.kontakt .kontakt-indhold input,
+.kontakt .kontakt-indhold textarea{
+	height:50px;
+  border: none;
+	padding:10px 15px;
+	color:#808080;
+	margin-bottom:30px;
+	font-size:16px;
+	letter-spacing:1px;
+	width: 100%;
+	background-color: #f5f7fa;
+}
+
+.kontakt .kontakt-indhold textarea{
+	height: 100px;
+}
+
+
+.kontakt .kontakt-indhold button{
+	display: block;
+	margin:auto;
+
+}
+
+.kontakt .kontakt-indhold button:hover{
+	background-color: grey;
+}
+
+.buttom, .kontakt .kontakt-indhold button{
+	padding:12px 40px;
+	font-size: 16px;
+	color: white;
+	background-color:black;
+	letter-spacing:.5px;
+	transition:all .5s ease;
+	border: none;
+}
+
+.buttom:hover, .kontakt .kontakt-indhold button:hover {
+	background-color: grey; !important;
+}
+
+/*Footer sektion*/
+
+footer{
+	float: left;
+	width: 100%;
+	background-color:#f5f7fa;
+	padding:30px 0px;
+}
+
+footer .socialmedia{
+	float:left;
+	width: 100%;
+	text-align: center;
+	padding-top:15px;
+}
+
+footer .socialmedia img{
+	width: 30px;
+	height: 30px;
+}
+
+footer .socialmedia img:hover{
+	background-color: white;
+}
+
+footer .socialmedia ul{
+padding:0;
+list-style: none;
+margin:0;
+}
+
+footer .socialmedia ul li{
+	display: inline;
+}
+
+p.copyright {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+}
